@@ -1,0 +1,20 @@
+{
+  "name": "weights",
+  "version": "0.0.1",
+  "homepage": "https://github.com/verlorendev/weights",
+  "authors": [
+    "Your Name Here <verloren@ukr.net>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.5",
+    "bootstrap": "~3.0.3"
+  }
+}
