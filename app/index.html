@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en" ng-app="weightsApp">
+<head>
+  <meta charset="utf-8">
+  <title>Weights top page</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="../bower_components/angular/angular.js"></script>
+  <script src="js/controllers.js"></script>
+</head>
+<body ng-controller="weightsController">
+  <ul>
+      <li ng-repeat="w in weightsList">
+
+        <span>{{w.date}}</span> <span>{{w.weight}}</span>
+      </li>
+  </ul>
+</body>
+</html>
