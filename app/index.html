@@ -3,17 +3,58 @@
 <head>
   <meta charset="utf-8">
   <title>Weights top page</title>
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="css/app.css">
-  <link rel="stylesheet" href="css/bootstrap.css">
   <script src="../bower_components/angular/angular.js"></script>
   <script src="js/controllers.js"></script>
 </head>
 <body ng-controller="weightsController">
-  <ul>
-      <li ng-repeat="w in weightsList">
 
-        <span>{{w.date}}</span> <span>{{w.weight}}</span>
-      </li>
-  </ul>
+
+  <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container-fluid">
+                <div class="navbar-header">
+
+                  <a class="navbar-brand" href="#">Weights</a>
+                </div>
+       
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Results</a></li>
+                <li><a href="#">Add weight</a></li>
+                <li><a href="#">Graphs</a></li>
+                <li><a href="#">About</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="">Anonymous</a></li>
+              </ul>
+            </div>
+         </div>
+  </nav>
+
+
+    <div class="container">
+       <div class="row bg-primary">
+        <div class="col-md-3">Date</div>
+        <div class="col-md-3">Weight</div>
+        <div class="col-md-3">.col-md-1</div>
+        <div class="col-md-3">.col-md-1</div>
+      </div>
+      <div class="row" ng-repeat="w in weightsList">
+        <div class="col-md-3">{{w.date}}</div>
+        <div class="col-md-3">{{w.weight}}</div>
+        <div class="col-md-3">.col-md-1</div>
+        <div class="col-md-3">.col-md-1</div>
+      </div>
+    </div>
+
+
+
+
+
+  
+
+
+
 </body>
 </html>
