@@ -240,5 +240,11 @@ StaticServlet.prototype.writeDirectoryIndex_ = function(req, res, path, files) {
   res.end();
 };
 
+
 // Must be last,
 main(process.argv);
+
+var powerLevel = function(level) {
+  return level > 9000 ? "it's over 9000!!!" : level;
+};
+module.exports = powerLevel;
